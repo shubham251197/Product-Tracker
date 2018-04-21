@@ -101,9 +101,8 @@ public class MainActivity extends AppCompatActivity {
 
             TrackingProduct p=new TrackingProduct(title,price,image);
             TrackingProducts.add(p);
-            adapter.notifyItemInserted(TrackingProducts.indexOf(p));
-
         }
+        adapter.notifyDataSetChanged();
     }
 
 
